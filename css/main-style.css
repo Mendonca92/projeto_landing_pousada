@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'sans-serif';
+}
+
+/* Topo fixo da página */
+/* Seção utilizada em comum para página principal e página de quartos */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .topo {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #fff;
+}
+
+header .topo nav .container-menu {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header .topo nav .container-menu .container-link-homepage .link-homepage {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #777171;
+}
+
+header .topo nav .container-menu .container-link-homepage .span-link-homepage {
+    color: #7691c4; 
+}
+
+header .topo nav .container-menu .container-link-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header .topo nav .container-menu .container-link-menu .link-menu {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #777171;
+}
+
+header .topo nav .container-menu .container-link-menu .link-menu:first-child {
+    margin-left: 0;
+}
+
+header .topo nav .container-menu .container-link-menu .link-menu:hover {
+    color: #7691c4;
+}
+
+/* Seção do conteúdo principal da homepage */
+/* Container do banner */
+main .banner{
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/img-fundo.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do container transparente de apresentação principal da página */
+main .banner .apresentacao-principal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(35, 141, 123, 0.6);
+    padding: 30px 25px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+main .banner .apresentacao-principal h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+main .banner .apresentacao-principal p {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Estilo global utilizado para as demais apresentações 
+das seções e ajustar a largura da classe conteúdo */
+main .apresentacao {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 30px 0;
+    padding-top: 45px;
+}
+
+main .apresentacao h2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #494545;
+}
+
+main .apresentacao p {
+    font-weight: 500;
+    line-height: 28px;
+    color: #494545;
+}
+
+main .conteudo {
+    width: 100%;
+}
+/* Fim do estilo global */
+
+/* Estilo da seção quartos na página principal */
+main .conteudo-quartos {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+main .conteudo .conteudo-quartos .card-quarto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(35, 141, 123);
+}
+
+main .conteudo .conteudo-quartos .card-quarto img {
+    width: 290px;
+}
+
+main .conteudo .conteudo-quartos .card-quarto a {
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #494545;
+}
+
+/* Estilo da seção sobre */
+main .conteudo .conteudo-sobre {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .conteudo .conteudo-sobre .card-sobre {
+    width: 450px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 20px 10px;
+}
+
+main .conteudo .conteudo-sobre .conteudo-card-sobre {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 10px 0 10px 10px;
+}
+
+main .conteudo .conteudo-sobre .conteudo-card-sobre h3 {
+    font-size: 16px;
+    color: #494545;
+    margin-bottom: 20px;
+}
+
+main .conteudo .conteudo-sobre .conteudo-card-sobre p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #494545;
+}
+
+main .conteudo .conteudo-sobre .container-imagem {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+
+main .conteudo .conteudo-sobre .container-imagem img {
+    width: 90px;
+    height: 100px;
+}
+
+/*Rodapé da página. Seção compartilhada para página principal e página de quartos.*/
+footer .rodape {
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(80, 131, 100);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer .rodape .dados-contato {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(20, 122, 66);
+    margin-bottom: 15px;
+    padding: 20px 0;
+    gap: 25px 20px;
+}
+
+footer .rodape .dados-contato .titulo-contato {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+}
+
+footer .rodape .dados-contato .conteudo-contato {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .rodape .dados-contato .conteudo-contato a {
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 15px;
+    padding-left: 0px;
+}
+
+footer .rodape .dados-contato .conteudo-contato img {
+    margin-left: 30px;
+    width: 30px;
+}
+
+footer .rodape .copyright {
+    margin-bottom: 15px;
+}
+
+footer .rodape .copyright p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
