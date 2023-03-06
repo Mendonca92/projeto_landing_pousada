@@ -5,7 +5,7 @@
     (Desenvolvendo um website com Display Flexível e navegação em múltiplas páginas)
 </p>
 
-###<i>Conceitos abordados</i>
+### <i>Conceitos abordados</i>
 <ul>
     <li>CSS Flex-Box</li>
     <li>CSS Position</li>
