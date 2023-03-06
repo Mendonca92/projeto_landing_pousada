@@ -28,7 +28,7 @@ header .topo nav .container-menu {
     margin: 0 auto;
     max-width: 1024px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
@@ -49,8 +49,9 @@ header .topo nav .container-menu .container-link-homepage .span-link-homepage {
 
 header .topo nav .container-menu .container-link-menu {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 header .topo nav .container-menu .container-link-menu .link-menu {
