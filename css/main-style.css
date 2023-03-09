@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,15 +10,11 @@ body {
 
 /* Topo fixo da página */
 /* Seção utilizada em comum para página principal e página de quartos */
-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
 
 header .topo {
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 10px 0 10px 0;
     background-color: #fff;
@@ -34,9 +30,16 @@ header .topo nav .container-menu {
     padding: 0 40px;
 }
 
+@media screen and (max-width: 720px) {
+    header .topo nav .container-menu {
+        flex-flow: column wrap;
+        gap: 15px;
+    }
+}
+
 header .topo nav .container-menu .container-link-homepage .link-homepage {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
@@ -56,7 +59,7 @@ header .topo nav .container-menu .container-link-menu {
 
 header .topo nav .container-menu .container-link-menu .link-menu {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
     margin-left: 20px;
     color: #777171;
@@ -73,6 +76,7 @@ header .topo nav .container-menu .container-link-menu .link-menu:hover {
 /* Seção do conteúdo principal da homepage */
 /* Container do banner */
 main .banner{
+    margin-top: 40px;
     width: 100vw;
     height: 100vh;
     background: url('../assets/img-fundo.jpg') no-repeat center;
@@ -80,6 +84,8 @@ main .banner{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* Estilo do container transparente de apresentação principal da página */
@@ -116,12 +122,13 @@ main .apresentacao {
     justify-content: center;
     align-items: center;
     margin: 80px 0 30px 0;
-    padding-top: 45px;
+    padding: 45px 20px 0 20px;
 }
 
 main .apresentacao h2 {
     font-weight: 500;
     font-size: 28px;
+    text-align: center;
     margin-bottom: 15px;
     color: #494545;
 }
@@ -129,6 +136,7 @@ main .apresentacao h2 {
 main .apresentacao p {
     font-weight: 500;
     line-height: 28px;
+    text-align: center;
     color: #494545;
 }
 
@@ -201,6 +209,7 @@ main .conteudo .conteudo-sobre .conteudo-card-sobre h3 {
 }
 
 main .conteudo .conteudo-sobre .conteudo-card-sobre p {
+    padding-right: 10px;
     font-size: 14px;
     line-height: 24px;
     color: #494545;
