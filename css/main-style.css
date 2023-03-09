@@ -27,8 +27,8 @@ header .topo nav .container-menu {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 @media screen and (max-width: 720px) {
